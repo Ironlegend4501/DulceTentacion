@@ -1,0 +1,292 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff7fb;
+  color: #333333;
+}
+
+#contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 20px 40px 20px;
+  background-color: #ffffff;
+}
+
+/* Encabezado y menú */
+#encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #f7a0c0;
+  padding-bottom: 10px;
+}
+
+#logo img {
+  width: 80px;
+  height: auto;
+  vertical-align: middle;
+}
+
+#logo h1 {
+  margin: 5px 0 0 0;
+  font-size: 26px;
+  color: #e23b7d;
+}
+
+#logo p {
+  margin: 0;
+  font-size: 13px;
+  color: #777777;
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#menu a:hover {
+  background-color: #f7a0c0;
+  color: #ffffff;
+}
+
+/* Secciones */
+.seccion {
+  padding: 25px 0;
+  border-bottom: 1px solid #f1d2e0;
+}
+
+.seccion h2 {
+  color: #e23b7d;
+  margin-bottom: 10px;
+}
+
+/* Bloques de texto (visión, misión, valores) */
+.bloque-texto {
+  margin-bottom: 15px;
+}
+
+.bloque-texto h3 {
+  margin-bottom: 5px;
+  color: #bf2d67;
+}
+
+/* Productos */
+.lista-productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.producto {
+  width: 30%;
+  min-width: 250px;
+  border: 1px solid #f1d2e0;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.producto img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.producto h3 {
+  margin: 10px 0 5px 0;
+}
+
+.precio {
+  font-weight: bold;
+  color: #bf2d67;
+}
+
+.descripcion {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.botones-producto {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.producto button {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #e23b7d;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.producto button:hover {
+  background-color: #bf2d67;
+}
+
+/* Carrito */
+#tabla-carrito {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+#tabla-carrito th,
+#tabla-carrito td {
+  border: 1px solid #f1d2e0;
+  padding: 8px;
+  text-align: center;
+}
+
+#tabla-carrito thead {
+  background-color: #ffe0ec;
+}
+
+.total-texto {
+  text-align: right;
+  font-weight: bold;
+}
+
+.total-monto {
+  font-weight: bold;
+  color: #bf2d67;
+}
+
+#acciones-carrito {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+#acciones-carrito button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#btn-vaciar {
+  background-color: #cccccc;
+  color: #333333;
+}
+
+#btn-vaciar:hover {
+  background-color: #aaaaaa;
+}
+
+#btn-comprar-carrito {
+  background-color: #e23b7d;
+  color: #ffffff;
+}
+
+#btn-comprar-carrito:hover {
+  background-color: #bf2d67;
+}
+
+/* Redes sociales */
+.lista-redes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn-red {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #e23b7d;
+  font-size: 14px;
+  font-weight: bold;
+  color: #e23b7d;
+}
+
+.btn-red:hover {
+  background-color: #e23b7d;
+  color: #ffffff;
+}
+
+/* Formulario de contacto */
+#form-contacto {
+  max-width: 500px;
+}
+
+.campo-form {
+  margin-bottom: 12px;
+}
+
+.campo-form label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.campo-form input[type="text"],
+.campo-form input[type="email"],
+.campo-form select,
+.campo-form textarea {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.campo-form input[type="submit"] {
+  border: none;
+  background-color: #e23b7d;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.campo-form input[type="submit"]:hover {
+  background-color: #bf2d67;
+}
+
+/* Video */
+.contenedor-video {
+  max-width: 600px;
+  margin-top: 15px;
+}
+
+.contenedor-video iframe {
+  width: 100%;
+  height: 315px;
+  border: none;
+}
+
+/* Pie de página */
+#pie {
+  text-align: center;
+  font-size: 13px;
+  color: #777777;
+  padding-top: 15px;
+}
